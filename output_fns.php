@@ -26,6 +26,7 @@ function do_html_header($title)
                 color: #000000;
             }
         </style>
+<<<<<<< HEAD
 
         <link rel="stylesheet" type="text/css" href="new_ss.css" />
         <script src="new_ajax.js" type="text/javascript"></script>
@@ -34,6 +35,12 @@ function do_html_header($title)
     <body>
     <img src="bookmark.gif" alt="PHPBookmark Logo" border="0"
          align="left" valign="bottom" height="55" width="57" />
+=======
+    </head>
+    <body>
+    <img src="bookmark.gif" alt="PHPBookmark Logo" border="0"
+         valign="bottom" height="70"/>
+>>>>>>> 3d30b0fec6d6bca548383278f97b66e8f4fb5ddd
 
     <h1>PHPBookmark</h1>
     <hr/>
@@ -126,6 +133,7 @@ function display_user_menu(){
     <?php
 }
 
+<<<<<<< HEAD
 function display_add_bm_form() {
 ?>
 <script type="text/javascript">
@@ -149,4 +157,6 @@ function display_add_bm_form() {
 <?php
 }
 
+=======
+>>>>>>> 3d30b0fec6d6bca548383278f97b66e8f4fb5ddd
 ?>

@@ -11,6 +11,7 @@ function add_bm($new_url) {
         and bm_URL='".$new_url."'");
 
     if ($result && ($result->num_rows > 0)) {
+<<<<<<< HEAD
         echo "<p class=\"warn\">This bookmark already exists.</p>";
     } else {
         if (!$conn->query("insert into bookmark values
@@ -19,6 +20,14 @@ function add_bm($new_url) {
         } else {
             echo "<p>Bookmark added.</p>";
         }
+=======
+        throw new Exception('This bookmark already exists.');
+    }
+
+    if (!$conn->query("insert into bookmark values
+        ('".$valid_user."', '".$new_url."')")) {
+        throw new Exception('Can\'t add bookmark to database.');
+>>>>>>> 3d30b0fec6d6bca548383278f97b66e8f4fb5ddd
     }
 
     return true;
